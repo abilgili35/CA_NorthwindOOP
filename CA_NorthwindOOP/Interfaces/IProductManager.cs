@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace CA_NorthwindOOP.Interfaces
 {
-    public interface IProduct
+    public interface IProductManager
     {
         //Category List
-        List<Product> GetProducts();
-
-        //Category Add
-        string AddProduct(Product product);
+        void GetAllProducts();
+        Product GetProduct(int id);
+        void CreateProduct();
 
         //Category Delete
-        bool DeleteProduct(int id);
+        void DeleteProduct();
 
         //Category Update
-        bool UpdateProduct(Product product);
+        void UpdateProduct();
     }
 }

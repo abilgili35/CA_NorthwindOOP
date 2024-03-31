@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace CA_NorthwindOOP.Interfaces
 {
-    public interface ICategory
+    public interface ICategoryManager
     {
-        //Category List
-        List<Category> GetCategories();
-
-        //Category Add
-        string AddCategory(Category category);
+        void GetAllCategories();
+        Category GetCategory(int id);
+        void CreateCategory();
 
         //Category Delete
-        bool DeleteCategory(int id);
+        void DeleteCategory();
 
         //Category Update
-        bool UpdateCategory(Category category);
+        void UpdateCategory();
     }
 }
